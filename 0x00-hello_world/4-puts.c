@@ -1,14 +1,10 @@
 /*
- * File: 4-puts.c
- * program that prints the text in puts
-*/
-
+ * This program writes a text through puts function
+ */
 #include <stdio.h>
-
 /*
- * it prints the word placed in puts function
-*/
-
+ * This is the begining of the put function
+ */
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
