@@ -1,9 +1,10 @@
 /*
+ * File: 4-puts.c
  * This program writes a text through puts function
  */
 #include <stdio.h>
 /**
- * This is the begining of the put function
+ * main - prints text placed in puts
  * Return: 0
  */
 int main(void)
