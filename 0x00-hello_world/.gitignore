@@ -1,0 +1,2 @@
+# exclude any files begining with a dot (.)
+./.*
