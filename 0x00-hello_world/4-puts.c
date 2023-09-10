@@ -4,6 +4,7 @@
 #include <stdio.h>
 /**
  * This is the begining of the put function
+ * Return: 0
  */
 int main(void)
 {
