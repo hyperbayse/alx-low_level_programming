@@ -1,11 +1,11 @@
 /*
- * file: 1-last_digit.c
+ * File: 1-last_digit.c 
  */
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
 /**
- * main - print last nmber
+ * main - Print last number
  * Return: 0
  */
 int main(void)
