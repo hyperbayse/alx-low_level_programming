@@ -4,7 +4,7 @@
  * @str: the strings working with
  * Return: void
  */
-void puts(char *str)
+void puts2(char *str)
 {
 	int i;
 	int j = 0;
@@ -18,5 +18,5 @@ void puts(char *str)
 	{
 		_putchar(str[i]);
 	}
-	_putchar('\n')
+	_putchar('\n');
 }
