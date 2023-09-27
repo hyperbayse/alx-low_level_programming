@@ -4,7 +4,7 @@
  * print_diagsums - prints the diagonal suare sum of the matrix
  * @a: matrix to be used
  * @size: matrix size
- * Return: nothing
+ * Return: Nothing
  */
 void print_diagsums(int *a, int size)
 {
@@ -13,6 +13,7 @@ void print_diagsums(int *a, int size)
 	for (b = 0; b < size; b++)
 	{
 		sum1 += a[(size + 1) * b];
+
 		sum2 += a[(size - 1) * (b + 1)];
 	}
 
