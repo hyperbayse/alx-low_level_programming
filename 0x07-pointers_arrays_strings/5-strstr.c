@@ -3,7 +3,7 @@
  * _strstr - locating substring
  * @haystack: searches for teh string
  * @needle: the string we are to find
- * Return: value character
+ * Return: char if found otherwise return 0
  */
 char *_strstr(char *haystack, char *needle)
 {
