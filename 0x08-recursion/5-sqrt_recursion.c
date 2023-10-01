@@ -9,7 +9,7 @@ int _sqrt(int n, int i);
  * Result: square root;
  */
 
-int _sqr_recursion(int n)
+int _sqrt_recursion(int n)
 {
 	return (_sqrt(n, 1));
 }
