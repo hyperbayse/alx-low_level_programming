@@ -12,11 +12,12 @@
  * main - print letter a-z excluding q and e
  * Return: success
  */
-int main()
+int main(void)
 {
 	char s;
 
-	for (s = 'a'; s <= 'z'; s++) {
+	for (s = 'a'; s <= 'z'; s++)
+	{
 		if (s == 'q') continue;
 		else if (s == 'e') continue;
 		putchar (s);
