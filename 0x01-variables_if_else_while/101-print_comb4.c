@@ -1,26 +1,31 @@
 /*
- * File: 101-print_comb4.c
+ * 101-print_comb4.c
+ *
+ *  Created on: Jan 1, 2024
+ *      Author: absheriff
  */
 #include <stdio.h>
 /**
- * main - Prints 3 numbers combined
- * Return: Always (Success)
+ * main - prints three different digits combination
+ * Return: success
  */
 int main(void)
 {
-	int c, i, k;
-	for (c = '0'; c <= '9'; c++)
+	int f, s, l;
+
+	for (f = '0'; f <= '7'; f++)
 	{
-		for (i = '0'; i<= '9'; i++)
+		for (s = '1'; s <= '8'; s++)
 		{
-			for (k = '0'; k <= '9'; k++)
+			for (l = '2'; l <= '9'; l++)
 			{
-				if (c < i && i < k)
+				if (!(s <= f) && !(l <= s))
 				{
-					putchar(c);
-					putchar(i);
-					putchar(k);
-					if (c != '7')
+					putchar(f);
+					putchar(s);
+					putchar(l);
+
+					if (!(f == '7' && s == '8' && l == '9'))
 					{
 						putchar(',');
 						putchar(' ');
