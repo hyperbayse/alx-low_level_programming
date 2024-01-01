@@ -18,8 +18,10 @@ int main(void)
 
 	for (s = 'a'; s <= 'z'; s++)
 	{
-		if (s == 'q') continue;
-		else if (s == 'e') continue;
+		if (s == 'q')
+			continue;
+		else if (s == 'e')
+			continue;
 		putchar (s);
 	}
 	putchar('\n');
