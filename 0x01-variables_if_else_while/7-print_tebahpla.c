@@ -1,18 +1,21 @@
 /*
- * File: 7-print_tebahpla.c
+ * 7-print_tebahpla.c
+ *
+ *  Created on: Jan 1, 2024
+ *      Author: absheriff
  */
 #include <stdio.h>
+
 /**
- * main - prints the reverse letter
- * Return: Always (Success)
+ * main - print alphabets in reverse order
+ * Return: success
  */
 int main(void)
 {
-	char c;
-	for (c = 'z'; c >= 'a' c--)
-	{
-		putchar(c);
-	}
+	char l;
+
+	for (l = 'z'; l >= 'a'; l--)
+		putchar(l);
 	putchar('\n');
 	return (0);
 }
