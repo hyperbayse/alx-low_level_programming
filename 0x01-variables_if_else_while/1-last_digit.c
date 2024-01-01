@@ -7,7 +7,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <string.h>
 
 /*
  * main - prints the last digit of the randomly generated numbers and check for some conditions
@@ -17,15 +16,8 @@ int main(){
 
 	srand(time(0));
 	n = rand() - (RAND_MAX/2);
-
-	//the number of string generated is saved inside gstr;
-	char gstr[20];
-
-	sprintf(gstr, "%d", n);
-	last = gstr[strlen(gstr)-1];
-	last = last - '0';
 	
-	if(n<0) last = last * -1;
+	last = n % 10;
 
 	if(last > 5) 
 		printf("Last digit of %d is %d and is greater than 5", n, last);
@@ -35,5 +27,6 @@ int main(){
 		printf("Last digit of %d is %d  and is less than 6 and not 0", n, last);
 
 	printf("\n");
-}
 
+	return (0);
+}
