@@ -1,15 +1,22 @@
+/*
+ * 6-print_numberz.c
+ *
+ *  Created on: Jan 1, 2024
+ *      Author: absheriff
+ */
 #include <stdio.h>
+
 /**
- * main - Prints the numbers
- * Return Always (Success)
+ * main - print number 0-9 using putchar
+ * Return: success
  */
 int main(void)
 {
 	int n;
-	for (n = '0'; n <= '9'; n++)
-	{
+
+	for (n = '30'; n <= '39'; n++)
 		putchar(n);
-	}
+
 	putchar('\n');
 	return (0);
 }
