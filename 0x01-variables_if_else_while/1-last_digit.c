@@ -10,23 +10,29 @@
 
 /*
  * main - prints the last digit of the randomly generated numbers and check for some conditions
+ * Return: 0
  */
-int main(){
+int main(void)
+{
 	int n, last;
 
 	srand(time(0));
-	n = rand() - (RAND_MAX/2);
+	n = rand() - RAND_MAX / 2;
 	
 	last = n % 10;
 
-	if(last > 5) 
-		printf("Last digit of %d is %d and is greater than 5", n, last);
-	else if(last == 0) 
-		printf("Last digit of %d is %d and is 0", n, last);
-	else if(last < 6 && last != 0) 
-		printf("Last digit of %d is %d  and is less than 6 and not 0", n, last);
-
-	printf("\n");
+	if (last != 0 && last < 6)
+	{
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, last);
+	}
+	else if (last > 5)
+	{
+		printf("Last digit of %d is %d and is greater than 5\n", n, last);
+	}
+	else
+	{
+		printf("Last digit of %d is %d and is 0\n", n, last);
+	}
 
 	return (0);
 }
