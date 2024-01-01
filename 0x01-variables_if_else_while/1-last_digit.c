@@ -9,7 +9,7 @@
 #include <time.h>
 
 /**
- * main - prints the last digit of the randomly generated numbers
+ * main - prints the last digit of the randomly generated number
  * Return: 0
  */
 int main(void)
@@ -30,4 +30,3 @@ int main(void)
 
 	return (0);
 }
-
