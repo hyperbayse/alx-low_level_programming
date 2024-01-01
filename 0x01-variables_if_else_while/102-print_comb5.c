@@ -1,38 +1,38 @@
 /*
- * File: 102-print_comb5.c
+ * 102-print_comb5.c
+ *
+ *  Created on: Jan 1, 2024
+ *      Author: absheriff
  */
 #include <stdio.h>
 /**
- * main - Prints 3 combined numbers
- * Return: Always (Success)
+ * main - prints combinations of two-two different digits separated by comma
+ * Return: success
  */
 int main(void)
 {
-	int c, i, k, j;
-	for (c = 48; c <= 57; c++)
+	int f, s, t, l;
+	for (f = '0'; f <= '9'; f++)
 	{
-		for (i = 48; i <= 57; i++)
+		for (s = '0'; s <= '9'; s++)
 		{
-			for (k = 48; k <= 57; k++)
+			for (t = '0'; t <= '9'; t++)
 			{
-				for (j = 48; j <= 57; j++)
+				for (l = '1'; l <= '9'; l++)
 				{
-					if (((k + j) > (c + i) && k >= c) || c < k)
+					if (!(t < f) && !(l <= s))
 					{
-						putchar(c);
-						putchar(i);
+						putchar(f);
+						putchar(s);
 						putchar(' ');
-						putchar(k);
-						putchar(j);
-					if (c + i + k + j == 227 && c == 57)
-					{
-					break;
-					}
-					else
-					{
-					putchar(',');
-					putchar(' ');
-					}
+						putchar(t);
+						putchar(l);
+
+						if (!(f == '9' && s == '8'))
+						{
+							putchar(',');
+							putchar(' ');
+						}
 					}
 				}
 			}
