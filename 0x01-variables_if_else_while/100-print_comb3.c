@@ -15,19 +15,20 @@ int main(void)
 {
 	int f, l;
 
-
 	for (f = '0'; f <= '9'; f++)
 	{
-		l = '1';
-
-		for (; l <= '9'; l++)
+		for (l = '1'; l <= '9'; l++)
 		{
 			if (!(l <= f))
 			{
 				putchar(f);
 				putchar(l);
-				putchar(',');
-				putchar(' ');
+
+				if (!(l == '9' && f == '8'))
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
