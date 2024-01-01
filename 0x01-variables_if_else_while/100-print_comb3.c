@@ -1,30 +1,37 @@
 /*
- * File: 100-print_comb3.c
+ * 100-print_comb3.c
+ *
+ *  Created on: Jan 1, 2024
+ *      Author: absheriff
  */
 #include <stdio.h>
+
 /**
- * main - Prints numbers combination
- * Return: Always (Success)
+ * main - prints combination of different 2 digit numbers
+ * Return: success
  */
+
 int main(void)
 {
-	int c, i;
-	for (c = '0'; c = <= '9'; c++)
+	int f, l;
+
+
+	for (f = '0'; f <= '9'; f++)
 	{
-		for (i = '0'; i <= '9'; i++)
+		l = '1';
+
+		for (; l <= '9'; l++)
 		{
-			if (c < i)
+			if (!(l <= f))
 			{
-				putchar(c);
-				putchar(i);
-				if (c != '8' || (c == '8' && i != '9'))
-				{
-					putchar(',');
-					putchar(' ');
-				}
+				putchar(f);
+				putchar(l);
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
+
 	putchar('\n');
 	return (0);
 }
