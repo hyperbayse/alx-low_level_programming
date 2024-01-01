@@ -12,22 +12,22 @@
 int main(void)
 {
 	int f, s, t, l;
+
 	for (f = '0'; f <= '9'; f++)
 	{
 		for (s = '0'; s <= '9'; s++)
 		{
 			for (t = '0'; t <= '9'; t++)
 			{
-				for (l = '1'; l <= '9'; l++)
+				for (l = '0'; l <= '9'; l++)
 				{
-					if (!(t < f) && !(l <= s))
+					if (!(t < f) && !(l < s))
 					{
 						putchar(f);
 						putchar(s);
 						putchar(' ');
 						putchar(t);
 						putchar(l);
-
 						if (!(f == '9' && s == '8'))
 						{
 							putchar(',');
