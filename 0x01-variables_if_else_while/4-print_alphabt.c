@@ -1,18 +1,27 @@
-#include <stdio.h>
-/**
- * main - Prints letters
- * Return: Always (Success)
+/*
+ * 4-print_alphabt.c
+ *
+ *  Created on: Dec 31, 2023
+ *  Author: absheriff
  */
-int main(void)
+
+
+#include <stdio.h>
+
+/**
+ * main - print letter a-z excluding q and e
+ * Return: success
+ */
+int main()
 {
-	char c;
-	for (c = 'a'; c <= 'z'; c++)
-	{
-		if (c != 'e' && c != 'q')
-		{
-			putchar(c);
-		}
+	char s;
+
+	for (s = 'a'; s <= 'z'; s++) {
+		if (s == 'q') continue;
+		else if (s == 'e') continue;
+		putchar (s);
 	}
 	putchar('\n');
+
 	return (0);
 }
