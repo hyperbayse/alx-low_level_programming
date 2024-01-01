@@ -1,21 +1,23 @@
 /*
- * File: 8-print_base16.c
+ * 8-print_base16.c
+ *
+ *  Created on: Jan 1, 2024
+ *      Author: absheriff
  */
 #include <stdio.h>
+
 /**
- * main - Prints hexadecimal string
+ * main - prints numbers of base 16 in lowercase
+ * Return: success
  */
 int main(void)
 {
-	char c;
-	for (c = '0'; c <= '9'; c++)
-	{
-		putchar(c);
-	}
+	char n, c;
+
+	for (n = '0'; n <= '9'; n++)
+		putchar(n);
 	for (c = 'a'; c <= 'f'; c++)
-	{
 		putchar(c);
-	}
 	putchar('\n');
 	return (0);
 }
