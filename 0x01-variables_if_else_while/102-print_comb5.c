@@ -21,17 +21,25 @@ int main(void)
 			{
 				for (l = '0'; l <= '9'; l++)
 				{
-					if (!(t < f) && !(l < s))
+					if (!(t < f))
 					{
-						putchar(f);
-						putchar(s);
-						putchar(' ');
-						putchar(t);
-						putchar(l);
-						if (!(f == '9' && s == '8'))
+						if (f == '0' && s == '0' && t == '0' && l == '0')
+							continue;
+						else
 						{
-							putchar(',');
-							putchar(' ');
+							if ((t + l) > (s + f))
+							{
+								putchar(f);
+								putchar(s);
+								putchar(' ');
+								putchar(t);
+								putchar(l);
+								if (!(f == '9' && s == '8'))
+								{
+								putchar(',');
+								putchar(' ');
+								}
+							}
 						}
 					}
 				}
