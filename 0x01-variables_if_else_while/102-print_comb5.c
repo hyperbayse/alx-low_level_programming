@@ -30,8 +30,8 @@ int main(void)
 						putchar(l);
 						if (!(f == '9' && s == '8'))
 						{
-						putchar(',');
-						putchar(' ');
+							putchar(',');
+							putchar(' ');
 						}
 					}
 					else
