@@ -23,23 +23,22 @@ int main(void)
 				{
 					if (!(t < f))
 					{
-						if (f == '0' && s == '0' && t == '0' && l == '0')
-							continue;
+						if ((t + l) > (s + f))
+						{
+							putchar(f);
+							putchar(s);
+							putchar(' ');
+							putchar(t);
+							putchar(l);
+							if (!(f == '9' && s == '8'))
+							{
+							putchar(',');
+							putchar(' ');
+							}
+						}
 						else
 						{
-							if ((t + l) > (s + f))
-							{
-								putchar(f);
-								putchar(s);
-								putchar(' ');
-								putchar(t);
-								putchar(l);
-								if (!(f == '9' && s == '8'))
-								{
-								putchar(',');
-								putchar(' ');
-								}
-							}
+							continue;
 						}
 					}
 				}
