@@ -28,11 +28,11 @@ int main(void)
 						putchar(' ');
 						putchar(t);
 						putchar(l);
-						if (!(f == '9' && s == '8'))
-						{
-							putchar(',');
-							putchar(' ');
-						}
+					if (!(f == '9' && s == '8'))
+					{
+					putchar(',');
+					putchar(' ');
+					}
 					}
 					else
 					{
