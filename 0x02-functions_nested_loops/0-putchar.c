@@ -1,8 +1,16 @@
 #include "main.h"
-/**
- * main - runs the program
- * Return: 0
+/*
+ * 0-putchar.c
+ *
+ *  Created on: Jan 6, 2024
+ *      Author: absheriff
  */
+
+/**
+ * main - prints _putchar
+ * Return: success
+ */
+
 int main(void)
 {
 	_putchar('_');
