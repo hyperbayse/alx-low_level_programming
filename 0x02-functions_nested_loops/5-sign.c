@@ -9,7 +9,7 @@
 /**
  * print_sign - prints the sign of a number
  * Return: success
- * @c: supplied argument
+ * @n: supplied argument
  * r: return value
  */
 int print_sign(int n)
