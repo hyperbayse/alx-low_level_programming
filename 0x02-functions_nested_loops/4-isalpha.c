@@ -33,5 +33,5 @@ int _isalpha(int c)
 			r = 0;
 		}
 	}
-	return r;
+	return (r);
 }
