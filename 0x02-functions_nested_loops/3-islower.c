@@ -7,6 +7,8 @@
  */
 /**
  * _islower - check if a character is lower or not
+ * s: character iterator
+ * r: return value
  */
 int _islower(int c)
 {
@@ -16,12 +18,12 @@ int _islower(int c)
 	{
 		if (c == s)
 		{
-			r = '1';
+			r = 1;
 			break;
 		}
 		else if (c < 'a' || c > 'z')
 		{
-			r = '0';
+			r = 0;
 			break;
 		}
 	}
