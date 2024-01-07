@@ -8,9 +8,9 @@
 /**
  * _islower - check if a character is lower or not
  * Return: success
- * c - argument supplied
- * s: character iterator
- * r: return value
+ * @c: argument supplied
+ * @s: character iterator
+ * @r: return value
  */
 int _islower(int c)
 {
