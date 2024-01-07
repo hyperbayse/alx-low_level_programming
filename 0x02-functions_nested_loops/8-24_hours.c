@@ -19,37 +19,36 @@ void jack_bauer(void)
 {
 	int fh, h, fm, m;
 
-	fh = 0; fm = 0;
+	fh = 0;
+	fm = 0;
 	for (h = 0; h <= 10;)
 	{
 		if ((fh == 2 && h == 3) && (fm > 5 || m == 9))
 			break;
+
+		if (h == 10)
+		{
+			fh++;
+			h = 0;
+		}
+		if (fm > 5 || m == 9)
+		{
+			fm = 0;
+			h++;
+			continue;
+		}
 		else
 		{
-			if (h == 10)
+			for (m = 0; m < 10; m++)
 			{
-				fh++;
-				h = 0;
+				_putchar(fh + '0');
+				_putchar(h + '0');
+				_putchar(':');
+				_putchar(fm + '0');
+				_putchar(m + '0');
+				_putchar('\n');
 			}
-			if (fm > 5 || m == 9)
-			{
-				fm = 0;
-				h++;
-				continue;
-			}
-			else
-			{
-				for (m = 0; m < 10; m++)
-				{
-					_putchar(fh + '0');
-					_putchar(h + '0');
-					_putchar(':');
-					_putchar(fm + '0');
-					_putchar(m + '0');
-					_putchar('\n');
-				}
-				fm++;
-			}
+			fm++;
 		}
 	}
 }
