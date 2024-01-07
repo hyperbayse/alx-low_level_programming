@@ -8,7 +8,7 @@
 /**
  * _islower - check if a character is lower or not
  * Return: success
- * c: argument supplied
+ * c - argument supplied
  * s: character iterator
  * r: return value
  */
