@@ -3,7 +3,7 @@
  * 4-isalpha.c
  *
  *  Created on: Jan 7, 2024
- *      Author: iRapid1
+ *      Author: absheriff
  */
 
 /**
