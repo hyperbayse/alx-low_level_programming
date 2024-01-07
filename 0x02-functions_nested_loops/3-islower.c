@@ -7,8 +7,10 @@
  */
 /**
  * _islower - check if a character is lower or not
+ * Return: success
  * s: character iterator
  * r: return value
+ * c: argument supplied
  */
 int _islower(int c)
 {
